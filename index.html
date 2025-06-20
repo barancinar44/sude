@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Sürpriz!</title>
+  <style>
+    body {
+      background-color: #fdf6f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      flex-direction: column;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #f28ab2;
+      padding: 12px 24px;
+      border-radius: 12px;
+      font-size: 1.2em;
+      transition: background-color 0.3s;
+    }
+    a:hover {
+      background-color: #e76c98;
+    }
+    #message {
+      margin-top: 30px;
+      font-size: 1.8em;
+      color: #e255a1;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <a href="#" onclick="showLove()">Tıkla ve Gör</a>
+  <div id="message">Sude seni seviyorum 💖</div>
+
+  <script>
+    function showLove() {
+      document.getElementById('message').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
